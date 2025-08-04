@@ -1,6 +1,6 @@
 # ForeSight
 
-This is the repository that contains source code for the [Nerfies website](https://foresight-iccv.github.io).
+This is the repository that contains source code for the [ForeSight website](https://foresight-iccv.github.io).
 
 If you find ForeSight useful for your work please cite:
 ```
