@@ -4,10 +4,11 @@ This is the repository that contains source code for the [Nerfies website](https
 
 If you find ForeSight useful for your work please cite:
 ```
-@article{park2021nerfies
+@inproceedings{papais2025foresight
   author    = {Papais, Sandro and Wang, Letian and Cheong, Brian and Waslander, Steven L},
   title     = {ForeSight: Multi-View Streaming Joint Object Detection and Trajectory Forecasting},
-  journal   = {ICCV},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month     = {October},
   year      = {2025}, 
 }
 ```
