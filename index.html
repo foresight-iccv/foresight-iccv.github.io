@@ -107,7 +107,7 @@
              <img src="./static/images/motivation.png"
                   alt="Comparison of temporal perception approaches and where ForeSight fits"
                   loading="eager" decoding="async"
-                  style="max-width: 100%; height: auto;">
+                  style="max-width: 60%; width: 100%; height: auto;">
            </figure>
           <p>
             ForeSight unifies 3D object detection and motion forecasting in a single streaming framework. A shared, bidirectional memory lets forecasts inform detections and vice versa, improving accuracy and temporal consistency in complex scenes.
@@ -131,16 +131,16 @@
             The transformer-based design eliminates explicit tracking, reducing error propagation. ForeSight streams queries across frames, using past detections and forecasts as priors to strengthen current predictions.
           </p>
 
-          <figure class="image has-text-centered">
-            <img src="./static/images/mini_00076.png"
-                 alt="Qualitative result with pedestrians and vehicles—detections and forecasted trajectories"
-                 loading="lazy" decoding="async" width="800" height="450">
-          </figure>
-          <figure class="image has-text-centered">
-            <img src="./static/images/mini_00248.png"
-                 alt="Qualitative result with occluded parked cars detected via temporal memory"
-                 loading="lazy" decoding="async" width="800" height="450">
-          </figure>
+                     <figure class="image has-text-centered">
+             <img src="./static/images/mini_00076.png"
+                  alt="Qualitative result with pedestrians and vehicles—detections and forecasted trajectories"
+                  loading="lazy" decoding="async" width="600" height="497">
+           </figure>
+           <figure class="image has-text-centered">
+             <img src="./static/images/mini_00248.png"
+                  alt="Qualitative result with occluded parked cars detected via temporal memory"
+                  loading="lazy" decoding="async" width="600" height="497">
+           </figure>
 
           <p id="results">
             On nuScenes, ForeSight sets a new bar for end-to-end prediction accuracy (EPA), outperforming UniAD by <strong>+9.3%</strong>, and improves detection with a <strong>+2.1% mAP</strong> gain over StreamPETR—while remaining efficient for streaming inference.
