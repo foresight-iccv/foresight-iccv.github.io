@@ -103,11 +103,12 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content">
-          <figure class="image is-3by2 has-text-centered">
-            <img src="./static/images/motivation.png"
-                 alt="Comparison of temporal perception approaches and where ForeSight fits"
-                 loading="eager" decoding="async">
-          </figure>
+                     <figure class="image has-text-centered">
+             <img src="./static/images/motivation.png"
+                  alt="Comparison of temporal perception approaches and where ForeSight fits"
+                  loading="eager" decoding="async"
+                  style="max-width: 100%; height: auto;">
+           </figure>
           <p>
             ForeSight unifies 3D object detection and motion forecasting in a single streaming framework. A shared, bidirectional memory lets forecasts inform detections and vice versa, improving accuracy and temporal consistency in complex scenes.
           </p>
@@ -120,9 +121,9 @@
           </figure>
 
           <figure class="has-text-centered">
-            <object data="./static/images/pipeline.pdf" type="application/pdf" width="800" height="500" aria-label="ForeSight pipeline diagram">
-              <p>View the pipeline diagram as a <a href="./static/images/pipeline.pdf">PDF</a>. (Tip: include a PNG/SVG fallback for better mobile performance.)</p>
-            </object>
+            <img src="./static/images/pipeline.png"
+                 alt="ForeSight pipeline: multi-view encoders, detection queries, forecast queries, and a joint streaming memory."
+                 loading="lazy" decoding="async">
             <figcaption>ForeSight pipeline: multi-view encoders, detection queries, forecast queries, and a joint streaming memory.</figcaption>
           </figure>
 
