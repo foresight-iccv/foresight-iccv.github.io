@@ -77,30 +77,28 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-centered">
-          <img src="./static/images/overview.png" alt="Overview" style="width: 100%; max-width: 800px;">
-          <img src="./static/images/motivation.png" alt="Motivation" style="width: 100%; max-width: 800px;">
-          <p class="content has-text-centered" style="margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-            A comparison of temporal learning perception methods related to ForeSight. (a) Traditional object detection methods leverage
-            single-frame sensor data. (b) Temporal sparse detectors typically keep memory of past detection locations without explicit forecasting
-            capabilities. (c) Typical joint detection-forecasting works pass information from detection to forecasting and rely on tracking for temporal
-            information. (d) ForeSight further propagates motion forecast information to future frames to be reused in detection and forecasting.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>We introduce ForeSight, a novel joint detection and forecasting framework for vision-based 3D perception in autonomous vehicles. Traditional approaches treat detection and forecasting as separate sequential tasks, limiting their ability to leverage temporal cues. ForeSight addresses this limitation with a multi-task streaming and bidirectional learning approach, allowing detection and forecasting to share query memory and propagate information seamlessly. The forecast-aware detection transformer enhances spatial reasoning by integrating trajectory predictions from a multiple hypothesis forecast memory queue, while the streaming forecast transformer improves temporal consistency using past forecasts and refined detections. Unlike tracking-based methods, ForeSight eliminates the need for explicit object association, reducing error propagation with a tracking-free model that efficiently scales across multi-frame sequences. Experiments on the nuScenes dataset show that ForeSight achieves state-of-the-art performance, achieving an EPA of 54.9\%, surpassing previous methods by 9.3\%, while also attaining the best mAP  and minADE among multi-view detection and forecasting models.</p>
+          <img src="./static/images/motivation.png" alt="Overview" style="width: 100%; max-width: 800px;">
+          <p class="content has-text-justified">
+            ForeSight is a new framework for autonomous driving perception that unifies 3D object detection and motion forecasting. 
+            Unlike traditional pipelines that treat these tasks separately, ForeSight allows them to inform each other through a shared memory system.
+            This bidirectional design makes detections more accurate and predictions more reliable, even in complex driving environments.
+          </p>
+          <img src="./static/images/overview.png" alt="Motivation" style="width: 100%; max-width: 800px;">
+          <p class="content has-text-justified">
+            A comparison of temporal learning perception methods related to ForeSight. 
+            (a) Traditional object detection methods leverage single-frame sensor data. 
+            (b) Temporal sparse detectors typically keep memory of past detection locations without explicit forecasting capabilities. 
+            (c) Typical joint detection-forecasting works pass information from detection to forecasting and rely on tracking for temporal information. 
+            (d) ForeSight further propagates motion forecast information to future frames to be reused in detection and forecasting.
+          </p>
+          <img src="./static/images/pipeline.png" alt="Pipeline" style="width: 100%; max-width: 800px;">
+          <p class="content has-text-justified">
+            Our approach processes multi-camera images to both detect surrounding objects and forecast their future motion. 
+            Using a transformer with a joint streaming memory, ForeSight propagates information from past detections and forecasts into future steps, improving temporal reasoning.          
+          </p>
         </div>
       </div>
     </div>
