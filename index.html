@@ -94,10 +94,17 @@
             (c) Typical joint detection-forecasting works pass information from detection to forecasting and rely on tracking for temporal information. 
             (d) ForeSight further propagates motion forecast information to future frames to be reused in detection and forecasting.
           </p>
-          <img src="./static/images/pipeline.png" alt="Pipeline" style="width: 100%; max-width: 800px;">
+          <img src="./static/images/pipeline.pdf" alt="Pipeline" style="width: 100%; max-width: 800px;">
           <p class="content has-text-justified">
             Our approach processes multi-camera images to both detect surrounding objects and forecast their future motion. 
             Using a transformer with a joint streaming memory, ForeSight propagates information from past detections and forecasts into future steps, improving temporal reasoning.          
+          </p>
+          <img src="./static/images/mini_00076.png" alt="Results1" style="width: 100%; max-width: 800px;">
+          <img src="./static/images/mini_00248.png" alt="Results2" style="width: 100%; max-width: 800px;">
+          <p>
+            On the nuScenes dataset, ForeSight achieves state-of-the-art performance, surpassing the best prior joint perception and forecasting model (UniAD) by +9.3% EPA. 
+            It also improves detection accuracy, delivering a +2.1% mAP gain over the leading multi-view detection method (StreamPETR). 
+            Qualitative examples highlight its ability to detect occluded vehicles and predict pedestrian crossings with high reliability.
           </p>
         </div>
       </div>
